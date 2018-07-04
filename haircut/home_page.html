@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Amazing Amy's Barbershop</title>
+</head>
+<body>
+
+	<h1>Amazing Amy's Barbershop</h1>
+	<p>A fresh cut for you and your family</p>
+
+	<p>Joanna: Woman Hairstylist</p>
+	<img style="width: 200px" src="https://thumbs.dreamstime.com/z/female-hairstylist-working-salon-26851642.jpg">
+
+	<p>Jim: Man Hair Stylist</p>
+	<img style="width: 200px" src="https://tse3.mm.bing.net/th?id=OIP.3lZCs_OOBT_MZy2ZLe6KtAHaE8&pid=Api">
+
+	<p>David: Baby Hair Stylist</p>
+	<img style="width: 200px" src="http://thumbs.dreamstime.com/z/male-hairstylist-hairdryer-leaning-chair-portrait-mature-salon-36380281.jpg">
+
+
+    <!-- User Comment Form -->
+	   <!-- User Comment Form -->
+    <form method="POST"> 1
+         {% csrf_token %} 2
+         <input placeholder="Write Your Username" type="text" name="username"> <br> 3
+         <textarea placeholder="Write Your Comment" name="comment"></textarea> <br> 4
+         <input type="submit"> 5
+    </form>
+     
+    <!-- Display User Comments -->
+    <h1>User Comments</h1>
+    <p>Username: {{username}}</p> 6
+    <p>Comment: {{comment}}</p> 7
+    
+    <!-- Website Footer -->
+    <footer> &copy; Kalu Kalu 2018 | A Kalu Kalu Production.</footer>
+</body>
+</html>
